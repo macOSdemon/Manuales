@@ -40,7 +40,7 @@ alias dfi='df -hTi'
 ## Cambiar diseño del prompt (técnica/grisácea)
 # -------------------------------------------------------------------
 # color prompt
-PS1='\[\e[0;90m\]\u箱\[\e[96m\][\H]\[\e[0m\] \[\e[1;37;41m\] \w \[\e[0m\]$: '
+PS1='\[\e[0;90m\]\u 🌑 |ಠ益ಠ|\[\e[96m\][\H]\[\e[0m\] \[\e[1;37;41m\] \w \[\e[0m\]$: '
 
 # Opción técnica/grisácea
 export LS_COLORS="di=1;30:fi=0;37:ln=1;33:so=1;35:pi=1;33:bd=1;30:cd=1;30:or=1;31:mi=1;31:ex=1;31"
