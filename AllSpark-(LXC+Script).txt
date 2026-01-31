@@ -2,6 +2,31 @@
 sudo apt update
 sudo apt install lxc lxc-templates bridge-utils
 
+
+
+# 📦 Instalación en Debian
+sudo apt update
+sudo apt install lxc lxc-templates bridge-utils
+
+# 🧱 Crear un contenedor Debian
+sudo lxc-create -n vm-samba -t debian
+
+# 🔌 Iniciar el contenedor (segundo plano) : esto es para que aunque salga con "exit" seguirá encendido
+sudo lxc-start -n vm-samba -d
+
+# 🏗️ Comprobar que está en ejecución
+sudo lxc-info -n vm-samba
+# 🫸 Detener el contenedor
+sudo lxc-stop -n vm-samba
+# 📄 Listar 
+lxc-ls --fancy
+
+# 📲 Acceder al contenedor
+sudo lxc-attach -n vm-samba
+
+
+
+
 # agrego el script, con el nombre sin extension para añadirlo como comando
 cd /usr/bin/
 vim kiribako
