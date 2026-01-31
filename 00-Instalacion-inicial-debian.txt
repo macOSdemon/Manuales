@@ -363,6 +363,7 @@ systemctl start ssh
 systemctl status ssh
 
 # Reiniciar sistema
+exec bash
 reboot now
 
 
