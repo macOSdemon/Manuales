@@ -94,7 +94,7 @@ Tools > Options > Default save path: /Descargas
 ==========================================================================================
 # configuración de búsqueda automática
 
-# search plugins confiables para peliculas
+# search plugins confiables para peliculasn (2026/02/01)
 https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins
 +---------------------------+------------+--------+------------------------------------------------------------------------------------------------+
 | Plugin                    | qBittorrent| Python | Comentarios                                                                                    |
