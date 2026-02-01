@@ -31,6 +31,9 @@ vim /etc/iptables/rules.v4
 COMMIT
 ----------------------------------------------------------------
 
+# reinicio servicio
+systemctl restart iptables
+
 # lo ejecuto
 qbittorrent-nox
 
@@ -39,7 +42,7 @@ http://<ip-del-servidor>:8080
 -  Usuario: admin
 -  Contraseña: adminadmin
 
-# creo un usuario para el sistema sin permisos
+# creo un usuario para el sistema sin permisos (eso evita que si una descarga tiene malware tenga permisos root)
 sudo adduser --disabled-password --gecos "" qbittorrent
 
 # creo la carpeta de Descargas
