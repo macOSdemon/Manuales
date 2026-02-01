@@ -1,3 +1,4 @@
+# ️‍🔥 Instalación qbitorrent
 # actualizo
 sudo apt update && sudo apt upgrade -y
 
@@ -93,7 +94,7 @@ Tools > Options > Default save path: /Descargas
 
 
 ==========================================================================================
-# configuración de búsqueda automática
+# 😍 configuración de búsqueda automática en qbitorrent
 
 # search plugins confiables para peliculasn (2026/02/01)
 https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins
@@ -143,7 +144,7 @@ systemctl status qbittorrent-nox
 
 
 ==========================================================================================
-## Instalar JellyFilm en el servidor
+## 🎥 Instalar JellyFilm en el servidor
 # Actualizar repos
 sudo apt update && sudo apt upgrade -y
 
@@ -166,6 +167,7 @@ sudo systemctl enable --now jellyfin
 # Accedes desde el navegador
 http://IP_DEL_CONTENEDOR:8096
 
+# 🥳 Ahora solo falta la configuración vía web, una vez completada la configuaración y marcada la carpeta donde descarga las peliculas qbitorrent /Descargas , solo tengo que instala JetFil en el cliente que será el televisor y seguir las instrucciones marcando la ip del servidor como la del contendor
 
 
 
