@@ -245,8 +245,21 @@ systemctl restart iptables
 # Reiniciar sistema
 exec bash
 
-## En el caso de que no se quira definir una ip estática, hay que realizar la configuración hasta aquí
-## En el caso qeu se requiera un ip estática, hay que realizar la siguiente configuración, ya que por defecto se configura por DHCP
+
+# ⚠️ Por defecto los contenedores no se inicializar automáticamente, hay que realizar la siguiente configuración parra que se inicialice en al iniciar el servidor
+# ⚠️ En caso de que se requiera que el contenedor se inicialice automáticamente
+vim /etc/lxc/<nombre_del_contenedor>.conf
+----------------------------------------------------------------
+...
+# Arranque automático del contenedor al iniciar el servidor
+lxc.start.auto = 1
+lxc.start.delay = 5      # opcional, segundos de espera para evitar que varios contenedores arranquen al mismo tiempo
+lxc.start.order = 1      # orden de arranque si tienes varios contenedores
+----------------------------------------------------------------
+
+
+## ⚠️ En el caso de que no se quira definir una ip estática, hay que realizar la configuración hasta aquí
+## ⚠️ En el caso qeu se requiera un ip estática, hay que realizar la siguiente configuración, ya que por defecto se configura por DHCP
 
 # defino una única ip estática para la máquina (dentro del nuevo contenedor)
 vim /etc/systemd/network/eth0.network
