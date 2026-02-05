@@ -43,7 +43,8 @@ alias dfi='df -hTi'
 PS1='\[\e[0;90m\]\u 🌑 |ಠ益ಠ |\[\e[96m\][\H]\[\e[0m\] \[\e[1;37;41m\] \w \[\e[0m\]$: '
 
 # Opción técnica/grisácea
-export LS_COLORS="di=1;30:fi=0;37:ln=1;33:so=1;35:pi=1;33:bd=1;30:cd=1;30:or=1;31:mi=1;31:ex=1;31"
+#export LS_COLORS="di=1;30:fi=0;37:ln=1;33:so=1;35:pi=1;33:bd=1;30:cd=1;30:or=1;31:mi=1;31:ex=1;31"
+export LS_COLORS="di=90:fi=37:ln=1;33:so=1;35:pi=1;33:bd=90:cd=90:or=1;31:mi=1;31:ex=1;31"
 #     di — directorios en gris oscuro técnico (bold black)
 #     fi — archivos normales en gris medio
 #     ln — enlaces simbólicos en amarillo (bold yellow)
