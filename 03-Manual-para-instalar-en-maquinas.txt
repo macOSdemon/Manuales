@@ -251,10 +251,12 @@ exec bash
 vim /var/lib/lxc/<nombre_del_contenedor>/config
 ----------------------------------------------------------------
 ...
-# Arranque automático del contenedor al iniciar el servidor
+## Arranque automático del contenedor al iniciar el servidor
 lxc.start.auto = 1
-lxc.start.delay = 5      # opcional, segundos de espera para evitar que varios contenedores arranquen al mismo tiempo
-lxc.start.order = 1      # orden de arranque si tienes varios contenedores
+# opcional, segundos de espera para evitar que varios contenedores arranquen al mismo tiempo. (A veces falla por esto)
+lxc.start.delay = 5
+# orden de arranque si tienes varios contenedores
+lxc.start.order = 1
 ----------------------------------------------------------------
 
 
