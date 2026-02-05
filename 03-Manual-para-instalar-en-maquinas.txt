@@ -248,7 +248,7 @@ exec bash
 
 # ⚠️ Por defecto los contenedores no se inicializar automáticamente, hay que realizar la siguiente configuración parra que se inicialice en al iniciar el servidor raíz
 # ⚠️ En caso de que se requiera que el contenedor se inicialice automáticamente
-vim /etc/lxc/<nombre_del_contenedor>.conf
+vim /var/lib/lxc/<nombre_del_contenedor>/config
 ----------------------------------------------------------------
 ...
 # Arranque automático del contenedor al iniciar el servidor
